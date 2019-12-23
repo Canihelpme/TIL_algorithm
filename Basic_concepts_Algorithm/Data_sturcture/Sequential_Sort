@@ -1,10 +1,50 @@
 #include <stdio.h>
+#define MAX_LIST_SIZE 100;
 typedef int element;
 
 typedef struct {
     element array[MAX_LIST_SZIE]; // Define the array
     int size;    //Size of list
 }ArrayListType;
+
+void error(char *message)
+{
+    fprint(stderr, "%s\n", message);
+    exit(1);
+}
+
+void init(ArrayListType *L)
+{
+    L->size = 0;
+}
+//If list is empty return 1 or return 0
+int is_empty(ArrayListType *L)
+{
+    return L->size == 0;
+}
+//If list is full return 1 or return 0
+int is_full(ArrayListType *L)
+{
+    return L ->size == MAX_LIST_SIZE;
+}
+
+element get_entry(ArrayListType *L, int pos)
+{
+    if(pos < 0 || pos >= L->size)
+    {
+        error("Location error");
+    }
+    return L -> array[pos];
+}
+
+void printf_list(ArrayListType *L)
+{
+    int i;
+    for(i =0; i< L->size; i++)
+    printf("%d ->",L->array[i]);
+    printf("\n");
+}
+
 
 
 
