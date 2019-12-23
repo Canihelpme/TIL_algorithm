@@ -1,0 +1,14 @@
+#include <stdio.h>
+typedef int element;
+
+typedef struct {
+    element array[MAX_LIST_SZIE]; // Define the array
+    int size;    //Size of list
+}ArrayListType;
+
+
+
+
+
+
+ 
