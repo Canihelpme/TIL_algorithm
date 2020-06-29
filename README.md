@@ -1,2 +1,2 @@
 # ALGORITHM_STUDY
-Just only for my study.
+Studying algorithm with c++
