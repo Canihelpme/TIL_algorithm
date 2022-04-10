@@ -13,7 +13,7 @@
 - 그래프 전체 지도: int[][]
 - 방문여부 : bool[][]
 - Queue(BFS)
-"""
+"""d
 from collections import deque
 import sys
 input = sys.stdin.readline
