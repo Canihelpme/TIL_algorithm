@@ -1,0 +1,8 @@
+alpha = map(str, input())
+alpha = list(alpha)
+count = 1
+for i in range(len(alpha)):
+    alpha[i] = count
+    count += 1
+    
+print(*alpha)
