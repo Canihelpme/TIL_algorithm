@@ -8,7 +8,7 @@ Big(O) = n 시간 제한 확인해보길!
 #import Queue -> 잘 안씀 why? 느려. ->Thread 안전
 from collections import deque #->Thread 비안전
 n = int(input())
-queue = []
+queue = deque
 for i in range(1, n+1):
     queue.append(i)
 

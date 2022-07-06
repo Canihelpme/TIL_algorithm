@@ -10,4 +10,6 @@ for i in range:
         lastCard = dq.pop()
         dq.appendleft(lastCard)
 
-print(*dq)
+print(*dq) 
+#*를 붙이면 원소만 깔끔하게 보여줌.
+# == while dq: print(dq.popleft(), end=' ')
